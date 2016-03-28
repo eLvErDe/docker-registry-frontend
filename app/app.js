@@ -64,11 +64,15 @@ angular
         templateUrl: 'repository/repository-detail.html',
         controller: 'RepositoryDetailController',
       }).
+      when('/repository/:repositoryUser', {
+        templateUrl: 'repository/repository-detail.html',
+        controller: 'RepositoryDetailController',
+      }).
       when('/repository/:repositoryUser?/:repositoryName/tags/:searchName?', {
         templateUrl: 'repository/repository-detail.html',
         controller: 'RepositoryController',
       }).
-	    when('/about', {
+      when('/about', {
         templateUrl: 'about.html',
       }).
       when('/tag/:repositoryUser/:repositoryName/:tagName/:imageId', {
